@@ -1,3 +1,21 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import '../static/css/themes/dark.css';
+@import '../static/css/themes/latte.css';
+@import '../static/css/themes/mocha.css';
+@import '../static/css/themes/amoled.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply text-text;
+	padding: 0;
+	margin: 0;
+	font-family: 'Nunito', sans-serif;
+	background: #171717;
+}
+
+* {
+	@apply transition-colors;
+}
