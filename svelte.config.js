@@ -5,7 +5,10 @@ import { phosphorSvelteOptimize } from 'phosphor-svelte/preprocessor';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: [phosphorSvelteOptimize(), vitePreprocess()],
-	kit: { adapter: adapter(), paths: { relative: false } }
+	kit: {
+		adapter: adapter(),
+		paths: { relative: false }
+	}
 };
 
 export default config;
